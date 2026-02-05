@@ -1,0 +1,9 @@
+<Solution>
+  <Folder Name="/Modules/">
+    <Project Path="Modules/CMS.Modules.Cfp/CMS.Modules.Cfp.csproj" />
+    <Project Path="Modules/CMS.Modules.Ticketing/CMS.Modules.Ticketing.csproj" />
+  </Folder>
+  <Project Path="CMS.Shared/CMS.Shared.csproj" />
+  <Project Path="CMS.Web/CMS.Web.csproj" />
+
+</Solution>
