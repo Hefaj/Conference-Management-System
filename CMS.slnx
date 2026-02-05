@@ -1,7 +1,7 @@
 <Solution>
   <Folder Name="/src/" />
   <Folder Name="/src/Backend/">
-    <Project Path="CMS.API/CMS.API.csproj" Id="d4195fb3-d2d0-4458-ad67-abd2d8f16363" />
+    <Project Path="CMS.Web/CMS.Web.csproj" Id="ffe19478-5555-4a2a-8ab3-4f304c6ba2d3" />
   </Folder>
   <Folder Name="/src/Backend/Modules/" />
   <Folder Name="/src/Frontend/" />
