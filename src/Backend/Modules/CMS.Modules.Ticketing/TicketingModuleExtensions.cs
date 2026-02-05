@@ -1,29 +1,29 @@
 ﻿using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.EntityFrameworkCore;
-using CMS.Modules.Cfp.Infrastructure;
+using CMS.Modules.Ticketing.Infrastructure;
 
-namespace CMS.Modules.Cfp;
+namespace CMS.Modules.Ticketing;
 
-public static class CfpModuleExtensions
+public static class TicketingModuleExtensions
 {
-    public static IServiceCollection AddCfpModule(
+    public static IServiceCollection AddTicketingModule(
         this IServiceCollection services,
         IConfiguration configuration)
     {
         var connectionString = configuration.GetConnectionString("Database");
 
-        services.AddDbContext<CfpDbContext>(options =>
+        services.AddDbContext<TicketingDbContext>(options =>
         {
             options.UseNpgsql(connectionString, npgsqlOptions =>
             {
                 // WAŻNE: Tu definiujesz, że ten moduł używa konkretnego schematu migracji
-                npgsqlOptions.MigrationsHistoryTable("__EFMigrationsHistory", "cfp");
+                npgsqlOptions.MigrationsHistoryTable("__EFMigrationsHistory", "ticketing");
             });
         });
 
         // 2. Rejestracja serwisów domenowych (jeśli masz)
-        // services.AddScoped<ISubmissionService, SubmissionService>();
+        // services.AddScoped<ITicketingService, TicketingService>();
 
         // 3. Rejestracja Background Workers (jeśli moduł ma swoje tło)
         // services.AddHostedService<ProcessOutboxMessagesJob>();

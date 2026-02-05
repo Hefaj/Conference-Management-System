@@ -22,18 +22,18 @@ Projekt budowany w oparciu o architekturę **Modular Monolith** z wykorzystaniem
 - [x] **Host Project**
     - [x] Projekt `CMS.Web` (ASP.NET Core).
     - [x] Instalacja i podstawowa konfiguracja **FastEndpoints**.
-- [ ] **Szkielet Modułów**
+- [x] **Szkielet Modułów**
     - [x] Class Library: `CMS.Shared`.
     - [x] Class Library: `CMS.Modules.Cfp`.
     - [x] Class Library: `CMS.Modules.Ticketing`.
-    - [ ] Extension methods do rejestracji modułów w DI.
+    - [x] Extension methods do rejestracji modułów w DI.
         - [x] `CMS.Modules.Cfp`
-        - [ ] `CMS.Modules.Ticketing`
-- [ ] **Baza Danych (EF Core)**
-    - [ ] Konfiguracja `DbContext` dla każdego modułu.
-        - [ ] `CMS.Modules.Cfp`
-        - [ ] `CMS.Modules.Ticketing`
-    - [ ] **Ważne:** Ustawienie osobnych schematów (Schema) w Postgres (np. `cfp`, `ticketing`).
+        - [x] `CMS.Modules.Ticketing`
+- [x] **Baza Danych (EF Core)**
+    - [x] Konfiguracja `DbContext` dla każdego modułu.
+        - [x] `CMS.Modules.Cfp`
+        - [x] `CMS.Modules.Ticketing`
+    - [x] **Ważne:** Ustawienie osobnych schematów (Schema) w Postgres (np. `cfp`, `ticketing`).
 
 ---
 

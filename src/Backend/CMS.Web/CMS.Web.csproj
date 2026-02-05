@@ -14,6 +14,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Modules\CMS.Modules.Cfp\CMS.Modules.Cfp.csproj" />
+    <ProjectReference Include="..\Modules\CMS.Modules.Ticketing\CMS.Modules.Ticketing.csproj" />
   </ItemGroup>
 
 </Project>
