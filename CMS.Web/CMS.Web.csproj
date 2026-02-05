@@ -12,4 +12,8 @@
     <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="10.0.2" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\CMS.Modules.Cfp\CMS.Modules.Cfp.csproj" />
+  </ItemGroup>
+
 </Project>

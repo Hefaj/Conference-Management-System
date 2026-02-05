@@ -1,8 +1,12 @@
 <Solution>
   <Folder Name="/src/" />
   <Folder Name="/src/Backend/">
+    <Project Path="CMS.Shared/CMS.Shared.csproj" Id="a352ca1e-11a6-4c38-92f0-07685f3dd764" />
     <Project Path="CMS.Web/CMS.Web.csproj" Id="ffe19478-5555-4a2a-8ab3-4f304c6ba2d3" />
   </Folder>
-  <Folder Name="/src/Backend/Modules/" />
+  <Folder Name="/src/Backend/Modules/">
+    <Project Path="CMS.Modules.Cfp/CMS.Modules.Cfp.csproj" Id="fbc8e1fe-b70b-4ec8-aecd-b6e17a69a03a" />
+    <Project Path="CMS.Modules.Ticketing/CMS.Modules.Ticketing.csproj" Id="04a8d348-3713-4dcc-86c4-b9255909fcbd" />
+  </Folder>
   <Folder Name="/src/Frontend/" />
 </Solution>

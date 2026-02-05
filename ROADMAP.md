@@ -19,15 +19,20 @@ Projekt budowany w oparciu o architekturę **Modular Monolith** z wykorzystaniem
     - [x] Plik `.env` z konfiguracją bazy danych (np. `POSTGRES_USER`, `POSTGRES_PASSWORD`, `POSTGRES_DB`).
     - [x] Plik `docker-compose.yml` z usługą PostgreSQL.
     - [x] (Opcjonalnie) Konfiguracja pgAdmin.
-- [X] **Host Project**
-    - [X] Projekt `CMS.Web` (ASP.NET Core).
-    - [X] Instalacja i podstawowa konfiguracja **FastEndpoints**.
+- [x] **Host Project**
+    - [x] Projekt `CMS.Web` (ASP.NET Core).
+    - [x] Instalacja i podstawowa konfiguracja **FastEndpoints**.
 - [ ] **Szkielet Modułów**
-    - [ ] Class Library: `CMS.Modules.Cfp`.
-    - [ ] Class Library: `CMS.Modules.Ticketing`.
-    - [ ] Extension methods do rejestracji modułów w DI (np. `AddCfpModule`).
+    - [x] Class Library: `CMS.Shared`.
+    - [x] Class Library: `CMS.Modules.Cfp`.
+    - [x] Class Library: `CMS.Modules.Ticketing`.
+    - [ ] Extension methods do rejestracji modułów w DI.
+        - [x] `CMS.Modules.Cfp`
+        - [ ] `CMS.Modules.Ticketing`
 - [ ] **Baza Danych (EF Core)**
     - [ ] Konfiguracja `DbContext` dla każdego modułu.
+        - [ ] `CMS.Modules.Cfp`
+        - [ ] `CMS.Modules.Ticketing`
     - [ ] **Ważne:** Ustawienie osobnych schematów (Schema) w Postgres (np. `cfp`, `ticketing`).
 
 ---

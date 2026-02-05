@@ -1,12 +1,17 @@
 using FastEndpoints;
 using FastEndpoints.Swagger;
 
-var bld = WebApplication.CreateBuilder();
-bld.Services
+using CMS.Modules.Cfp;
+
+var builder = WebApplication.CreateBuilder();
+
+builder.Services.AddCfpModule(builder.Configuration);
+
+builder.Services
    .AddFastEndpoints()
    .SwaggerDocument();
 
-var app = bld.Build();
+var app = builder.Build();
 app.UseFastEndpoints()
    .UseSwaggerGen();
 app.Run();
