@@ -9,7 +9,7 @@ internal class CfpDbContext : DbContext
     {
     }
 
-    public DbSet<Submission> Submissions { get; set; }
+    public DbSet<Conference> Conferences { get; set; }
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {

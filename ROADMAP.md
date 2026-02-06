@@ -34,26 +34,36 @@ Projekt budowany w oparciu o architekturę **Modular Monolith** z wykorzystaniem
         - [x] `CMS.Modules.Cfp`
         - [x] `CMS.Modules.Ticketing`
     - [x] **Ważne:** Ustawienie osobnych schematów (Schema) w Postgres (np. `cfp`, `ticketing`).
-
+- [x] **DDD**
+    - [x] Aggregate Root (Entity)
+    - [x] Value Object
+    - [x] IDomainEvent
+    - [x] Result
+    - [x] IUnitOfWork
+    - [x] IRepository
+- [x] **DDD Sheard**
+    - [x] Email
 ---
 
 ## 🚀 Sprint 1: Moduł CFP (Call For Papers) - Vertical Slice
 **Cel:** Pierwsza działająca logika biznesowa, walidacja i API.
 
-- [ ] **Model Domenowy**
-    - [ ] Agregat `Submission` (Entity).
-    - [ ] Value Objects (np. `SpeakerBio`, `SubmissionStatus`).
-- [ ] **Data Layer**
-    - [ ] Mapowanie encji w EF Core.
+- [x] **Model Domenowy**
+    - [x] Agregat `Conference` (Entity).
+    - [x] Value Objects (np. `Speaker`, `ConferenceStatus`).
+- [ ] **Infrastructure**
+    - [x] Mapowanie encji w EF Core.
+    - [x] CfpDbContext
+    - [x] CfpUnitOfWork
     - [ ] Utworzenie i wykonanie pierwszej migracji.
 - [ ] **Endpoint: Zgłoszenie (POST)**
-    - [ ] Implementacja `CreateSubmissionEndpoint`.
+    - [ ] Implementacja `CreateConferenceEndpoint`.
     - [ ] DTO Request/Response.
     - [ ] Walidacja przy użyciu `FluentValidation` (wbudowane w FastEndpoints).
 - [ ] **Endpoint: Przeglądanie (GET)**
-    - [ ] Implementacja `GetSubmissionEndpoint`.
+    - [ ] Implementacja `GetConferenceEndpoint`.
 - [ ] **Endpoint: Akceptacja (PUT)**
-    - [ ] Implementacja `ApproveSubmissionEndpoint` (zmiana statusu).
+    - [ ] Implementacja `ApproveConferenceEndpoint` (zmiana statusu).
 - [ ] **Testy**
     - [ ] Podstawowy test integracyjny (np. z użyciem `FastEndpoints.Testing`).
 
