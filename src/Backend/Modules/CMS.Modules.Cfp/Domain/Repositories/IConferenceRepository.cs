@@ -3,6 +3,6 @@ using CMS.Shared;
 
 namespace CMS.Modules.Cfp.Domain.Repositories;
 
-internal interface IConferenceRepositonry : IRepository<Conference>
+internal interface IConferenceRepository : IRepository<Conference>
 {
 }

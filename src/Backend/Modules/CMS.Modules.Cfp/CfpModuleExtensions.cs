@@ -1,7 +1,10 @@
-﻿using Microsoft.Extensions.Configuration;
-using Microsoft.Extensions.DependencyInjection;
-using Microsoft.EntityFrameworkCore;
+﻿using CMS.Modules.Cfp.Domain;
+using CMS.Modules.Cfp.Domain.Repositories;
 using CMS.Modules.Cfp.Infrastructure;
+using CMS.Modules.Cfp.Infrastructure.Repositories;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Configuration;
+using Microsoft.Extensions.DependencyInjection;
 
 namespace CMS.Modules.Cfp;
 
@@ -24,6 +27,8 @@ public static class CfpModuleExtensions
 
         // 2. Rejestracja serwisów domenowych (jeśli masz)
         // services.AddScoped<ISubmissionService, SubmissionService>();
+        services.AddScoped<ICfpUnitOfWork, CfpUnitOfWork>();
+        services.AddScoped<IConferenceRepository, ConferenceRepository>();
 
         // 3. Rejestracja Background Workers (jeśli moduł ma swoje tło)
         // services.AddHostedService<ProcessOutboxMessagesJob>();

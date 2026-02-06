@@ -4,11 +4,11 @@ using Microsoft.EntityFrameworkCore;
 
 namespace CMS.Modules.Cfp.Infrastructure.Repositories;
 
-internal class ConferenceRepositonry : IConferenceRepositonry
+internal class ConferenceRepository : IConferenceRepository
 {
     private readonly CfpDbContext _dbContext;
 
-    public ConferenceRepositonry(CfpDbContext dbContext)
+    public ConferenceRepository(CfpDbContext dbContext)
     {
         _dbContext = dbContext;
     }
