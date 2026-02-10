@@ -1,6 +1,9 @@
 <Solution>
   <Folder Name="/Modules/">
-    <Project Path="Modules/CMS.Modules.Cfp/CMS.Modules.Cfp.csproj" />
+    <Project Path="CMS.Modules.Agenda/CMS.Modules.Agenda.csproj" Id="1b711d42-a7fe-4c3d-a028-11e00c3c1c53" />
+    <Project Path="Modules/CMS.Modules.Payment/CMS.Modules.Payment.csproj" Id="8f3b8eb3-ae21-41a5-9606-49f13e44589f" />
+    <Project Path="Modules/CMS.Modules.Registration/CMS.Modules.Registration.csproj" Id="4ddd99be-e4ea-45f0-a7f7-33397d2d2bfa" />
+    <Project Path="Modules/CMS.Modules.Submission/CMS.Modules.Submission.csproj" />
     <Project Path="Modules/CMS.Modules.Ticketing/CMS.Modules.Ticketing.csproj" />
   </Folder>
   <Project Path="CMS.Shared/CMS.Shared.csproj" />

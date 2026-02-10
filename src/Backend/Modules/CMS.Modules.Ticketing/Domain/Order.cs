@@ -5,6 +5,6 @@ using System.Text;
 
 namespace CMS.Modules.Ticketing.Domain;
 
-internal class Order : AggregateRoot
+internal class Order : RootEntity
 {
 }

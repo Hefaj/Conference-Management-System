@@ -39,14 +39,24 @@ Projekt budowany w oparciu o architekturę **Modular Monolith** z wykorzystaniem
     - [x] Value Object
     - [x] IDomainEvent
     - [x] Result
-    - [x] IUnitOfWork
-    - [x] IRepository
 - [x] **DDD Sheard**
-    - [x] Email
+    - [x] EmailAddress – z walidacją formatu.
+    - [x] Money (Kwota, Waluta) – z logiką zaokrągleń i operacji matematycznych.
+    - [x] PersonName (Imię, Nazwisko).
+    - [x] DateTimeRange (Start, Koniec) – z walidacją Start < Koniec.
+- [x] IUnitOfWork
+- [x] IRepository
+
 ---
 
 ## 🚀 Sprint 1: Moduł CFP (Call For Papers) - Vertical Slice
+Odpowiedzialność: Obsługa procesu zgłaszania tematów przez prelegentów, 
+proces recenzji (Call for Papers) oraz selekcja ostatecznej listy wystąpień.
+
 **Cel:** Pierwsza działająca logika biznesowa, walidacja i API.
+
+Ten moduł odpowiada za proces zgłaszania propozycji, ich recenzowania oraz wyboru prelegentów.
+Rola: Zarządzanie cyklem życia zgłoszenia od "Draftu" do "Akceptacji/Odrzucenia".
 
 - [x] **Model Domenowy**
     - [x] Agregat `Conference` (Entity).
@@ -128,3 +138,12 @@ Projekt budowany w oparciu o architekturę **Modular Monolith** z wykorzystaniem
 - [ ] Integracja z prawdziwym systemem płatności (np. Stripe - tryb testowy).
 - [ ] Prosty frontend (Blazor lub React, Angular).
 - [ ] Generowanie biletów PDF.
+
+
+
+
+1. Moduł: Nabór Prelekcji (Call for Papers / CFP)
+Ten moduł odpowiada za proces zgłaszania propozycji, ich recenzowania oraz wyboru prelegentów.
+Rola: Zarządzanie cyklem życia zgłoszenia od "Draftu" do "Akceptacji/Odrzucenia".
+
+Zgłoszenie prelekcji.
